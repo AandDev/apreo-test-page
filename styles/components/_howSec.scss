@@ -1,0 +1,31 @@
+.how-sec {
+    background-image: url(../../assets/svg/bg-how-sec.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    .container {
+        padding: 40px 0;
+        .subtitle {
+            color: $text-light-color;
+        }
+        .how-content {
+            p{
+                color: $text-light-color;
+            }
+        }
+    }
+}
+
+// ----- Responsive ----- //
+
+// PCs, Laptops
+@media screen and (min-width: 900px) {
+    
+    .how-sec {
+        .container {
+            .how-content {
+                padding: 40px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,50 @@
+.teacher-sec {
+
+    .teacher-content {
+        margin-top: -30px;
+    }
+
+    .teacher-img {
+        width: 100%;
+        svg {
+            #heart {
+                animation: heart 2s infinite alternate;
+            }
+        }
+    }
+}
+
+
+// ----- Responsive ----- //
+
+// PCs, Laptops
+@media screen and (min-width: 900px) {
+    
+    .teacher-sec {
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .teacher-content {
+                width: 45%;
+            }
+        
+            .teacher-img {
+                width: 40%;
+            }
+        }
+    }
+}
+
+
+// ----- Animations ----- //
+
+@keyframes heart {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-7px);
+    }
+}

@@ -1,0 +1,116 @@
+.why-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .why-text {
+        h3 {
+            margin: 15px 0;
+        }
+    }
+    .why-img {
+        width: 100%;
+        svg {
+
+            // Travel
+            #arm-pin {
+                animation: arm-pin 2.5s infinite alternate ease;
+                transform-origin: left;
+            }
+
+            // Interview
+            #resume {
+                animation: resume 2.5s infinite alternate ease;
+                transform-origin: right;
+            }
+            
+            #hand {
+                animation: hand 1.5s infinite alternate ease;
+                transform-origin: bottom;
+            }
+
+            // Friends
+            #bubble-1 {
+                animation: float 3s infinite alternate linear;
+            }
+            #bubble-2 {
+                animation: float 3s 1.5s infinite alternate linear;
+            }
+        }
+    }
+}
+
+
+// ----- Responsive ----- //
+
+// Tablets
+@media screen and (min-width: 760px) {
+    svg {
+        margin: 30px 0;
+    }
+}
+
+// PCs, Laptops
+@media screen and (min-width: 900px) {
+
+    .why-item {
+        flex-direction: row;
+        justify-content: space-around;
+        .why-text {
+            width: 40%;
+            h3 {
+                font-size: 30px;
+            }
+        }
+        .why-img {
+            width: 40%;
+        }
+
+        &:first-child, &:nth-child(3) {
+            flex-direction: row-reverse;
+        }
+    }
+
+}
+
+
+// ----- Animations ----- //
+
+// Travel
+@keyframes arm-pin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(-1deg);
+    }
+}
+
+// Interview
+@keyframes resume {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(1.2deg);
+    }
+}
+
+@keyframes hand {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(0.5deg);
+    }
+}
+
+// Friends
+@keyframes float {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}

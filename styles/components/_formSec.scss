@@ -1,0 +1,79 @@
+.contact-content {
+    padding: 30px 0;
+    background-image: url(../../assets/svg/bg-form.svg);
+    background-repeat: no-repeat;
+    .contact-form {
+        text-align: center;
+        .btn {
+            width: 80%;
+        }
+    }
+}
+
+svg {
+    #stars-1 {
+    animation: float 1.5s infinite alternate linear;
+    }
+
+    #stars-2 {
+    animation: float2 1.5s infinite alternate linear;
+    }
+}
+
+
+// ----- Responsive ----- //
+
+// Tablets
+@media screen and (min-width: 730px) {
+
+    .contact-content {
+        height: 450px;
+    }
+
+}
+
+// PCs, Laptops
+@media screen and (min-width: 900px) {
+    
+    .contact-box {
+        display: flex;
+        align-content: center;
+
+        .contact-content {
+            flex: 2;
+            .contact-form {
+                width: 60%;
+            }
+        }
+
+        .contact-img {
+            flex: 1;
+            svg {
+                margin: 0;
+                width: 80%;
+            }
+        }
+    }
+    
+}
+
+
+// ----- Animations ----- //
+
+@keyframes float {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes float2 {
+    from {
+        transform: translateY(-15px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
