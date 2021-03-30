@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Language Apero</title>
 </head>
 <body>
@@ -180,11 +181,11 @@
                 <div class="why-content">
                     
                     <div class="why-item">
-                        <div class="why-text">
+                        <div class="why-text" data-aos="fade-up">
                             <h3>Viaja y descubre nuevos lugares</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam modi esse consectetur culpa rem deserunt voluptas voluptatibus deleniti quam magni animi, quibusdam, similique optio eius incidunt tempore autem mollitia iure.</p>
                         </div>
-                        <figure class="why-img">
+                        <figure class="why-img" data-aos="fade-down">
                             <svg width="500" height="390" viewBox="0 0 500 390" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="travel">
                                 <g id="traveling-girl">
@@ -450,11 +451,11 @@
                     </div>
                     
                     <div class="why-item">
-                        <div class="why-text">
+                        <div class="why-text" data-aos="fade-up">
                             <h3>Encuentra más oportunidades de trabajo</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam modi esse consectetur culpa rem deserunt voluptas voluptatibus deleniti quam magni animi, quibusdam, similique optio eius incidunt tempore autem mollitia iure.</p>
                         </div>
-                        <figure class="why-img">
+                        <figure class="why-img" data-aos="fade-down">
                             <svg width="500" height="294" viewBox="0 0 500 294" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="interview">
                                 <g id="hand">
@@ -579,11 +580,11 @@
                     </div>
                     
                     <div class="why-item">
-                        <div class="why-text">
+                        <div class="why-text" data-aos="fade-up">
                             <h3>Conoce nuevas culturas y personas</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam modi esse consectetur culpa rem deserunt voluptas voluptatibus deleniti quam magni animi, quibusdam, similique optio eius incidunt tempore autem mollitia iure.</p>
                         </div>
-                        <figure class="why-img">
+                        <figure class="why-img" data-aos="fade-down">
                             <svg width="500" height="418" viewBox="0 0 500 418" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="friends">
                                 <g id="friends_2">
@@ -714,7 +715,7 @@
         <section id="how" class="section how-sec">
             <div class="container">
                 <h2 class="subtitle">¿Cómo?</h2>
-                <div class="how-content">
+                <div class="how-content" data-aos="fade-up">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         <br><br>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -725,7 +726,7 @@
         <!-- TEACHER SECTION -->
         <section id="teacher" class="section teacher-sec">
             <div class="container">
-                <figure class="teacher-img">
+                <figure class="teacher-img" data-aos="fade-up-right">
                     <svg width="500" height="398" viewBox="0 0 500 398" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="teacher">
                         <g id="girl">
@@ -775,7 +776,7 @@
                     </svg>
                         
                 </figure>
-                <div class="teacher-content">
+                <div class="teacher-content" data-aos="fade-up">
                     <h2 class="subtitle">Tu profesora!</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
@@ -786,7 +787,7 @@
         <section id="contact" class="section contact-sec">
             <h2 class="subtitle">¿Alguna pregunta?</h2>
             <div class="contact-box">
-                <div class="contact-content">
+                <div class="contact-content" data-aos="fade-right">
                     <form action="" id="contact-form" class="contact-form container">
                         <input type="text" placeholder="Nombre">
                         <input type="text" placeholder="Numero">
@@ -795,7 +796,7 @@
                         <button type="submit" class="btn submit-btn">Enviar</button>
                     </form>
                 </div>
-                <figure class="contact-img container">
+                <figure class="contact-img container" data-aos="fade-up">
                     <svg width="500" height="465" viewBox="0 0 500 465" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="mail">
                         <g id="buzon">
@@ -853,6 +854,14 @@
     
     <!-- SCRIPTS -->
     <script src="./js/app.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 500
+        });
+    </script>
 
 </body>
 </html>
